@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Font Injector",
+  "version": "1.0",
+  "description": "Transform any website with custom fonts - Google Fonts support included",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Font Injector"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

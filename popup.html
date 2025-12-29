@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Font Injector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>✨ Font Injector</h1>
+      <p class="subtitle">Transform any website with custom fonts</p>
+    </div>
+    
+    <div class="toggle-section">
+      <div class="toggle-switch">
+        <input type="checkbox" id="enableInjector" class="toggle-input">
+        <label class="toggle-label" for="enableInjector">
+          <span>Enable Font Injector</span>
+        </label>
+      </div>
+    </div>
+
+    <div class="section">
+      <label for="customFont">Custom Google Font</label>
+      <div class="input-group">
+        <input type="text" id="customFont" placeholder="e.g. Inter, Quicksand">
+        <button id="addCustom">Use</button>
+      </div>
+    </div>
+
+    <div class="preview">
+      <div class="preview-label">Preview</div>
+      <p id="previewText">Do you like this? Please give me a star on GitHub! 0123456789</p>
+    </div>
+
+    <button id="saveBtn" class="save-btn">
+      <span>Save & Apply</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M13 4L6 11L3 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    
+    <div class="status" id="status"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
